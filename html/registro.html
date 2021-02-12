@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/main-header.css">
     <link rel="stylesheet" href="../css/footerlogin.css">
     <link rel="stylesheet" href="../css/loginregistrar.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -45,24 +46,21 @@
             <form>
                 <!-- USERNAME INPUT -->
                 <label for="username">Username</label>
-                <input type="text" placeholder="Enter Username">
+                <input type="text" placeholder="Enter Username" maxlength="20" required >
                 <!-- CORREO INPUT -->
                 <label for="email">Email</label>
-                <input type="text" placeholder="Enter Email">
+                <input type="text" placeholder="Enter Email" required>
                 <!-- PASSWORD INPUT -->
                 <label for="password">Password</label>
-                <input type="password" placeholder="Enter Password">
+                <input type="text" placeholder="Enter Password" required>
 
                 <!-- reCAPTCHA v3 -->
-                <button class="g-recaptcha" 
-        data-sitekey="reCAPTCHA_site_key" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
-
-
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+      <br/>
+      <input type="submit" value="Submit">
                 <!-- checkbox terminos y condiciones -->
                 <div class="terminos">
-                    <input type="checkbox" name="terminosycondiciones">
+                    <input type="checkbox" name="terminosycondiciones"  required>
                     <label for="terminosycondiciones">Aceptar terminos y condiciones</label>
                 </div>
 
@@ -129,10 +127,6 @@
 </body>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="../js/menu-responsible.js"></script>
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
-    function onSubmit(token) {
-      document.getElementById("demo-form").submit();
-    }
-  </script>
+
+
 </html>
