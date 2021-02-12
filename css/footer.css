@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing:border-box;
+    }
+
+.container-footer{
+        margin-top: 5%;
+        background: #000000;
+        height:400px;
+        width: 100%;
+        padding: 40px;
+ }
+.gshopfast{
+    color:#ffffff;
+    font-size: 40px;
+    margin-left:50px;
+    margin-top: 0px;
+    font-weight: 500;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.juegos{ 
+    color:#ffffff;
+    font-size: 20px;
+    margin-top:40px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100%;
+   
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+   flex-wrap: wrap;
+}
+.colum{
+    margin-left:80px;
+}
+
+.colum p{
+    margin-top: 25px;
+}
+.colum a {
+    text-decoration:none;
+    font-size: 16px;
+    color:#969393 ;
+}
+
+.cuenta{ 
+    color:#ffffff;
+    font-size: 20px;
+    margin-top: 40px;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;  
+}
+
+.ayuda{
+    color:#ffffff;
+    font-size: 20px;
+    margin-top: 40px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;  
+}
+
+@media screen and (max-width: 600px) {
+    .container-footer{
+        height: 700px;
+    }
+  }

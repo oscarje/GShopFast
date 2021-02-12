@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 80px;
+}
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    background: rgb(0, 0, 0);
+    height: 80px;
+
+    width: 100%;
+    /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0;
+    /* Posicionamos la cabecera al lado izquierdo */
+    top: 0;
+    /* Posicionamos la cabecera pegada arriba */
+    position: fixed;
+    /* Hacemos que la cabecera tenga una posición fija */
+}
+
+#main-header a {
+    color: rgb(255, 255, 255);
+}
+
+
+/*
+ Logo
+ */
+#logo-header {
+    font-family: 'Impact', arial;
+    float: left;
+    padding: 10px 0 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#logo-header .site-name {
+    display: block;
+    font-size: 2.2em;
+}
+
+#img-header {
+
+    width: 100px;
+    margin: 15px;
+
+}
+
+.iniciar-nav {
+    border-color: white;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+/*
+ Navegación
+ */
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 40px;
+    margin-top: 15px;
+}
+
+nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 10px 0;
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    border-bottom: 5px solid rgba(255, 230, 0, 0.76);
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media(max-width: 1023px) {
+   .menu-responsible{
+
+    right: 20px;
+   }
+   .icon-menu{
+    position: absolute;
+    right: 40px;
+   }
+    nav ul {
+        
+        display: none;
+    }
+
+    nav ul.show {
+        display: block;
+       
+    }
+
+    nav ul li {
+
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 70px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.555);
+        
+    }
+
+    .menu-icon {
+        height: 80px;
+        display: block;
+
+    }
+
+}
+
+@media(max-width: 530px) {
+    nav ul li:hover {
+        border-bottom: 5px solid rgba(255, 230, 0, 0.76);
+    }
+
+    #img-header {
+        display: none;
+        width: 80px;
+        margin: 15px 0 15px 0;
+    }
+    .menu-icon{
+        margin-top: 5px;
+        height: 60px;
+    }
+    #main-header {
+        height: 70px;
+    }
+    body {
+        margin-top: 70px;
+    }
+}
